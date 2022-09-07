@@ -1,11 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'node:12'
-      args '--network jenkins-blue-ocean-tutorial-mynet'
-    }
-
-  }
+  agent any
   stages {
     stage('Build ') {
       steps {
